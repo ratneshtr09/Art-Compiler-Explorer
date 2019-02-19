@@ -4,10 +4,7 @@
         <title>ART Compiler</title>
         <script src="codemirror/lib/codemirror.js"></script>
         <link href="codemirror/lib/codemirror.css" rel="stylesheet"/>
-        <link href="codemirror/theme/dracula.css" rel="stylesheet"/>
         <script src="codemirror/mode/clike/test.js"></script>
-        <script src="codemirror/mode/gas/gas.js"></script>
-        <script src="codemirror/mode/php/php.js"></script>
         <script src="codemirror/mode/clike/clike1.js"></script>
         <script src="codemirror/addon/edit/closetag.js"></script>
         <script src="codemirror/addon/fold/brace-fold.js"></script>
@@ -18,8 +15,7 @@
         <link href="codemirror/addon/fold/foldgutter.css" rel="stylesheet"/>
         <script src="codemirror/addon/selection/active-line.js"></script>
         <script src="codemirror/addon/edit/closebrackets.js"></script>
-        <script src="codemirror/addon/edit/matchbrackets.js"></script>
-	<link href="codemirror/theme/dracula.css" rel="stylesheet"/> 
+	<script src="codemirror/addon/edit/matchbrackets.js"></script>
         <script src="codemirror/addon/scroll/simplescrollbars.js"></script>
         <link href="codemirror/addon/scroll/simplescrollbars1.css" rel="stylesheet"/>
 
@@ -106,8 +102,6 @@
 	 border-radius: 5px;
 
 }
-</style>
-<style>
  input[type="file"] {
     display: none;
 }
