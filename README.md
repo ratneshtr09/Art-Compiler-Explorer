@@ -10,8 +10,7 @@ Setup the Apache:
         Require all granted
 </Directory>
 -	vim /etc/apache2/sites-enabled/000-default.conf
--	Replace the line : 
-DocumentRoot /var/www/html/  by DocumentRoot /home/rtiwari1/compiler/
+-	Replace the line :  DocumentRoot /var/www/html/  by DocumentRoot /home/rtiwari1/compiler/
 
 3)	Install PHP:			sudo apt-get install php5 libapache2-mod-php5
 4)	Start the apache server:		sudo /etc/init.d/apache2 restart
@@ -36,4 +35,4 @@ Add the project:
 1) Download codemirror github project https://github.com/codemirror/CodeMirror
 2) Replace the codemirror files by above files defined in code.
 3) Download the project Art-explorer in compiler directory of your local machine
-3)	Open the browser and the url to use the compiler explorer by giving ip address of machine.
+4) Open the browser and the url to use the compiler explorer by giving ip address of machine.
