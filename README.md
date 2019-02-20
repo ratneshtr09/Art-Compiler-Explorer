@@ -7,9 +7,8 @@ Setup the Apache:
 <Directory /home/rtiwari1/compiler/>
         Options Indexes FollowSymLinks
         AllowOverride None
-        Require all granted
-</Directory>
--	vim /etc/apache2/sites-enabled/000-default.conf
+        Require all granted </Directory>
+-       vim /etc/apache2/sites-enabled/000-default.conf
 -	Replace the line :  DocumentRoot /var/www/html/  by DocumentRoot /home/rtiwari1/compiler/
 
 3)	Install PHP:			sudo apt-get install php5 libapache2-mod-php5
@@ -18,7 +17,7 @@ Setup the Apache:
 -	cd  /home/rtiwari1/compiler/
 -	Write a small php code to test whether setup is working or not.
 -	vim index.php
--	<?php  echo “Setup is working..” ?>
+                <?php  echo “Setup is working..” ?>
 -	Run a php file from localhost browser. Open browser.
 -	Add ip address of host in the url, for example: 10.66.245.110
 -	It should display message: “Setup is working..”.
