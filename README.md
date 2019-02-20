@@ -16,8 +16,7 @@ Setup the Apache:
 5)	Testing the php:
 -	cd  /home/rtiwari1/compiler/
 -	Write a small php code to test whether setup is working or not.
--	vim index.php
-                <?php  echo “Setup is working..” ?>
+-	vim index.php                <?php  echo “Setup is working..” ?>
 -	Run a php file from localhost browser. Open browser.
 -	Add ip address of host in the url, for example: 10.66.245.110
 -	It should display message: “Setup is working..”.
