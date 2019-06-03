@@ -2,7 +2,11 @@ var='classes'
 sed -i '/\/\//s/class//g' $var/text.txt
 usr=$(whoami)
 cat "$var/text.txt" |grep '\<class\>'| sed 's/^.*class //;s/ .*$//'| sed -e "s/\r//g" > NamingClass.txt
-filen=$(grep -e 'public class\|public static void main\>' "$var/text.txt"  | grep -B1 "public static void main" | grep '\<class\>' | sed "s/^.*class \+//;s/ .*$//")
+sed -i 's/{//g' NamingClass.txt
+#file1=$(grep -e 'class\|public static void main\>' "$var/text.txt"  | grep -B1 "public static void main" | grep '\<class\>' | sed "s/^.*class \+//;s/ .*$//")
+#filen=${file1//{}
+#filen=$(echo "$file1" | sed 's/{//g' )
+filen=$(grep -e 'class\|public static void main\>' "$var/text.txt"  | grep -B1 "public static void main" | grep '\<class\>' | sed 's/{//g' | sed 's/^.*class //g' | sed 's/ .*//g' )
 cp "$var/text.txt" "$var/$filen.java"
 javac "$var/$filen.java" 2>error.txt
 Noclass=$(sed -n \$= NamingClass.txt)
@@ -160,6 +164,4 @@ do
 	
 
 done
-
-
 
